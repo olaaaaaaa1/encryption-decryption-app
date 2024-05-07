@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkripsi-Dekripsi</title>
+    <link rel="stylesheet" href="enkripsi-deskripsi.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enkripsi-Dekripsi</h1>
+        <div>
+            <label for="inputText">Masukkan Teks:</label>
+            <textarea id="inputText" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="key">Kunci:</label>
+            <input type="text" id="key">
+        </div>
+        <div>
+            <button onclick="encrypt()">Enkripsi</button>
+            <button onclick="decrypt()">Dekripsi</button>
+        </div>
+        <div>
+            <label for="outputText">Hasil:</label><br>
+            <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+        </div>
+    </div>
+</body>
+    <script src="enkripsi-deskripsi.js"></script>
+</html>
